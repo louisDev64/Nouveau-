@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Développeur Informatique</title>
+  <meta name="description" content="Portfolio d'un développeur informatique : compétences, projets, contact." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Dev<span>Portfolio</span></a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero / Accueil -->
+  <section id="home" class="hero">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h1>Salut, je suis <span class="accent">AZONNOUDOU Lauréat</span></h1>
+        <p>Développeur informatique spécialisé en <strong>web</strong> et <strong>logiciels</strong>. J’aime l'informatique et le développement web.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+        <div class="hero__meta">
+          <span>Basé à Cotonou, Bénin</span> • <span>Disponible en freelance</span>
+        </div>
+      </div>
+      <div class="hero__image">
+        <!-- Remplace par ta photo -->
+        <img src="1753125252969.jpg" alt="Photo du développeur" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Compétences techniques</h2>
+      <p class="section__intro">Un aperçu des technologies que j’aimerais utilisé au quotidien.</p>
+      <div class="skills__grid">
+        <div class="card">
+          <h3>Frontend</h3>
+          <ul class="tags">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Backend</h3>
+          <ul class="tags">
+            <li>Express</li><li>Python</li><li>Django</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>DevOps</h3>
+          <ul class="tags">
+            <li>CI/CD</li><li>Linux</li><li>Cloud</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Outils</h3>
+          <ul class="tags">
+            <li>Git</li><li>GitHub</li><li>Jira</li><li>Figma</li><li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="section section--alt">
+    <div class="container">
+      <h2>Projets réalisés</h2>
+      <p class="section__intro">Sélection de travaux—code propre, performance et UX soignée.</p>
+      <div class="projects__grid">
+        <!-- Projet 1 -->
+        <article class="project card">
+          <img src="1755438053840.jpg" alt="Aperçu projet 1" />
+          <div class="project__content">
+            <h3>Plateforme e-commerce</h3>
+            <p>Application full-stack avec panier, paiement et tableau de bord admin.</p>
+            <ul class="tags">
+              <li>React</li><li>Node.js</li><li>MongoDB</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="link">Démo</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Projet 2 -->
+        <article class="project card">
+          <img src="1753125252969.jpg" alt="Aperçu projet 2" />
+          <div class="project__content">
+            <h3>Dashboard analytique</h3>
+            <p>Visualisation de données en temps réel avec graphiques interactifs.</p>
+            <ul class="tags">
+              <li>Vue</li><li>D3.js</li><li>Firebase</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="link">Démo</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Projet 3 -->
+        <article class="project card">
+          <img src="1754451126611.jpg" alt="Aperçu projet 3" />
+          <div class="project__content">
+            <h3>API de réservation</h3>
+            <p>API REST sécurisée avec authentification JWT et tests automatisés.</p>
+            <ul class="tags">
+              <li>Python</li><li>Django</li><li>PostgreSQL</li>
+            </ul>
+            <div class="project__links">
+              <a href="#" class="link">Docs</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="section__intro">Parle-moi de ton projet—je réponds rapidement.</p>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Ton nom" required />
+            <small class="error" data-error-for="name"></small>
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ton@email.com" required />
+            <small class="error" data-error-for="email"></small>
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Décris ton besoin…" required></textarea>
+          <small class="error" data-error-for="message"></small>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <p class="form__status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Copyright© <span id="year"></span> Tous droits réservés.     Portfolio@2026</p>
+      <div class="footer__links">
+        <a href="https://github.com/tonprofil" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:Luciennefanou5@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+https://GITHUB.com/Luciennefanou5-code/style.css.Git
